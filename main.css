@@ -1,0 +1,311 @@
+/*标题栏*/
+
+
+QWidget, QMainWindow, QDialog, QFrame {
+    border: 1px rgba(50, 50, 50, 0.8) solid;
+    background: #AAA;
+}
+
+TitleBar {
+    background-color: #AAA;
+}
+
+/*最小化最大化关闭按钮通用默认背景*/
+#buttonMinimum, #buttonMaximum, #buttonClose, #buttonAddPage {
+    border: none;
+    color: #000;
+    /*background-color:#EEE;*/
+}
+
+#buttonAddPage {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#buttonClose, #buttonMaximum, #buttonMinimum, #buttonAddPage {
+    font-size: 15px;
+}
+
+/*悬停*/
+#buttonMinimum:hover, #buttonMaximum:hover {
+    color: white;
+    background: #999;
+}
+
+#buttonClose:hover {
+    color: white;
+    background: red;
+}
+
+#buttonAddPage:hover {
+    color: white;
+    background: rgba(3, 169, 244, 0.6);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*鼠标按下不放*/
+#buttonMinimum:pressed, #buttonMaximum:pressed {
+    color: grey;
+}
+
+#buttonClose:pressed {
+    color: white;
+    background: red;
+}
+
+#navigation_bar {
+    background: white;
+}
+
+/* UI 按钮样式 */
+#back_button, #next_button, #reload_button, #index_button {
+    color: rgba(0, 0, 0, 0.51);
+    background: rgba(0, 0, 0, 0);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#more_button {
+    color: rgba(0, 0, 0, 0.51);
+    background: rgba(0, 0, 0, 0);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#more_button:pressed {
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+}
+
+#back_button:pressed, #next_button:pressed, #reload_button:pressed,  #index_button:pressed, #gdMenu:pressed {
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+}
+
+#back_button:hover, #next_button:hover, #reload_button:hover,  #index_button:hover, #gdMenu:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* UI 菜单按钮样式 */
+QWidget{
+    /*background: white;*/
+    margin: 0;
+    padding: 0;
+}
+QPushButton{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.qwidget{
+    background: white;
+    text-align:center
+}
+#sf_label_rate{
+    background: transparent;
+    align-self:right;
+}
+#moreMenu{
+    color: black;
+    background: white;
+    width: 230px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+}
+
+QMenu::item {
+    height: 20px;
+    border-bottom: 1px solid #aaa;
+    /*border: 1px solid #aaa;*/
+}
+
+QMenu::item:selected {
+    color: white;
+    background: rgb(0, 160, 230);
+}
+#sf_item_label{
+    padding-right: 25px;
+    padding-left: 0px;
+    background: transparent;
+    font-size: 12px;
+}
+#zoom_in_btn, #zoom_out_btn{
+    color: rgba(0, 0, 0, 0.51);
+    background: rgba(0, 0, 0, 0);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 0px;
+}
+#zoom_in_btn{
+    border-right: 1px solid #aaa;
+}
+#zoom_out_btn{
+    border-left: 1px solid #aaa;
+}
+#zoom_in_btn:pressed, #zoom_out_btn:pressed,#full_screen_button:pressed{
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+#zoom_in_btn:hover, #zoom_out_btn:hover,#full_screen_button:hover{
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+#full_screen_button{
+    color: rgba(0, 0, 0, 0.51);
+    background: rgba(0, 0, 0, 0);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+QLineEdit {
+    border: 1px solid rgba(120, 120, 120, 0.5);
+    /*border-radius:15px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .78);*/
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 26px;
+    color: #aaa;
+    transition: 200ms;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+QLineEdit::hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #666;
+}
+
+QLineEdit::focus {
+    background: rgba(255, 255, 255, 0.5);
+    color: #666;
+}
+
+
+QTabWidget {
+}
+
+QTabWidget::pane {
+    top: -35px;
+    margin: 0;
+}
+
+QTabWidget::tab-bar {
+    border-bottom: none;
+    right: 0px;
+    margin-right: 80px;
+}
+
+/*QTabBar{
+    border:none;
+    subcontrol-position:center;
+    padding-left: 15px;
+}*/
+QTabBar::close-button {
+    background-position: center;
+    background-image: url(":icons/tab_cross.png");
+}
+
+QTabBar::close-button::selected {
+    background-image: url(":icons/tab_cross_hover.png");
+}
+
+QTabBar::close-button::hover {
+}
+
+QTabBar::tab {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    /*margin: 10px;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 34px;
+    font-size: 14px;
+    text-overflow: hidden;
+    overflow: ellipsis;
+    alignment: left;
+    color: #fff;
+    background: transparent;
+
+}
+
+QTabBar::tab::first {
+}
+
+QTabBar::tab::selected {
+    background: #FFF;
+    color: #666;
+}
+
+QTabBar::tab:hover {
+    /*background:rgba(80, 80, 80, 0.4);
+    box-shadow: 0 0 5px gray;*/
+}
+
+#headStatusBarLabel, #statusBarLabel, #statusBarDownloadLabel {
+    color: #FFF;
+}
+
+QProgressBar {
+    border: none;
+    color: white;
+    text-align: center;
+    background: rgb(68, 69, 73);
+    width: 100px;
+}
+
+QProgressBar::chunk {
+    border: none;
+    background: rgb(0, 160, 230);
+}
+
+QMenu {
+    color: black;
+    background: white;
+    width: 150px;
+    font-size: 14px;
+}
+
+QMenu::item {
+
+}
+
+QMenu::item:selected {
+    color: white;
+    background: rgb(0, 160, 230);
+    padding: 0;
+    margin: 0;
+}
