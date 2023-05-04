@@ -1,5 +1,7 @@
 # PyQt5-Chrome
 
+> BUG 太多了 不想维护了
+
 ## Install
 ```shell
 pip install -r requirements.txt
